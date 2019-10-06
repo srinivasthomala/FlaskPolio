@@ -4,78 +4,66 @@
     Srinivas Thomala&#39;s Resume
 {% endblock %}
 
-{% block def %}
-    <symbol id="icon-location" viewBox="0 0 20 20">
-    <title>location</title>
-    <path d="M10 20s-7-9.13-7-13c0-3.866 3.134-7 7-7s7 3.134 7 7v0c0 3.87-7 13-7 13zM10 9c1.105 0 2-0.895 2-2s-0.895-2-2-2v0c-1.105 0-2 0.895-2 2s0.895 2 2 2v0z"></path>
-    </symbol>
-{% endblock %}
-
 {% block content %}
-<div id="resume">
-
-    <section id="experience">
-        <h1>Experience</h1>
-
-        <h2>
-            <strong>Software Engineer</strong>,
-            July 2017 - July 2019
-        </h2>
-
-        <ul>
-            <li>Implementation of video codecs for MPEG-2, MPEG-4, H.264 (AVC) and H.265 (HEVC) video standards.</li>
-            <li>ARM (NEON), x86 (SSE) and multi-threading optimizations to improve the performance of video codecs.</li>
-            <li>Improve robustness of video codecs through enhancements to validation frameworks.</li>
-        </ul>
-        <h2>
-            <strong>Software Intern</strong>,
-            May 2016 - July 2016
-        </h2>
-
-        <ul>
-            <li>Worked on the implementation of De-Interlacing algorithm to run on GPU (Graphics Processing Unit) using Open-CL.</li>
-            <li>Open-CL kernels for each individual module of the algorithm are written and optimized.</li>
-        </ul>
-    </section>
-
-    <section id="skills">
-        <h1>Skills</h1>
-
-        <ul>
-            <li>
-                <strong>Languages</strong>
-                Java, Python, C++, C, HTML, CSS, JavaScript, Arm Assembly, Neon, Open-cl.
-            </li>
-            <li>
-                <strong>Frameworks</strong>
-                flask.
-            </li>
-            <li>
-                <strong>Configuration</strong>
-                make.
-            </li>
-            <li>
-                <strong>Version control</strong>
-                GIT.
-            </li>
-            <li>
-                <strong>Tools</strong>
-                Eclipse, Matlab.
-            </li>
-            <li>
-                <strong>Industry Software Skills</strong>
-                Data Structures & Algorithms, Object Oriented Programming.
-            </li>
-        </ul>
-    </section>
-
-    <section id="education">
-        <h1>Education</h1>
-        <ul>
-          <li>Currently Pursuing Masters from University of Florida.</li>
-          <li>Bachelor's degree from National Institute of Technology Karnataka.</li>
-        </ul>
-    </section>
-
+<h3 style="text-align:center;">Experience</h3>
+  <div class="row justify-content-around" style="text-align:center;">
+    <div class="col-8" style="text-align:center;">
+      <hr style="clear:both;"/>
+  <h5 style="text-align:left;">Software Engineer</h5>
+  <h6 style="text-align:left;"> <i class="icon pos fas fa-keyboard"></i> July 2017 - July 2019</h6>
+    <ul style="text-align:left;">
+        <li>Implementation of video codecs for MPEG-2, MPEG-4, H.264 (AVC) and H.265 (HEVC) video standards.</li>
+        <li>ARM (NEON), x86 (SSE) and multi-threading optimizations to improve the performance of video codecs.</li>
+        <li>Improve robustness of video codecs through enhancements to validation frameworks.</li>
+    </ul>
+    <h5 style="text-align:left;">Software Intern</h5>
+    <h6 style="text-align:left;"> <i class="icon pos fas fa-keyboard"></i> May 2016 - July 2016</h6>
+    <ul style="text-align:left;">
+        <li>Worked on the implementation of De-Interlacing algorithm to run on GPU (Graphics Processing Unit) using Open-CL.</li>
+        <li>Open-CL kernels for each individual module of the algorithm are written and optimized.</li>
+    </ul>
+</div>
+</div>
+<div class="row justify-content-around" style="text-align:center;">
+  <div class="col-8" style="text-align:center;">
+  <h3 style="text-align:center;">Skills</h3>
+  <hr style="clear:both;"/>
+  <ul style="text-align:left;">
+    <li>
+        <strong>Languages:</strong>
+        Java, Python, C++, C, HTML, CSS, JavaScript, Arm Assembly, Neon, Open-cl.
+    </li>
+    <li>
+        <strong>Web Frameworks:</strong>
+        Flask, Bootstrap.
+    </li>
+    <li>
+        <strong>Industry Software Skills:</strong>
+        Data Structures & Algorithms, Object Oriented Programming.
+    </li>
+    <li>
+        <strong>Tools:</strong>
+        Eclipse, Matlab.
+    </li>
+    <li>
+        <strong>Configuration:</strong>
+        make.
+    </li>
+    <li>
+        <strong>Version control:</strong>
+        GIT.
+    </li>
+  </ul>
+</div>
+</div>
+<div class="row justify-content-around" style="text-align:center;">
+  <div class="col-8" style="text-align:center;">
+  <h3 style="text-align:center;">Education</h3>
+  <hr style="clear:both;"/>
+  <ul style="text-align:left;">
+    <li>Currently Pursuing Masters in Computer Science from University of Florida.</li>
+    <li>Bachelor's degree from National Institute of Technology Karnataka, India.</li>
+  </ul>
+</div>
 </div>
 {% endblock %}

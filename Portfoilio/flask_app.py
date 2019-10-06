@@ -11,9 +11,9 @@ def user():
 def resume():
     return render_template('resume.html')
 
-@app.route('/projects')
+@app.route('/portfolio')
 def projects():
-    return render_template('projects.html')
+    return render_template('portfolio.html')
 
 @app.route('/contact')
 def contact():

@@ -1,74 +1,67 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>{% block title %}{% endblock %}</title>
-        <meta name="google-site-verification" content="s5U7V7CATch7C5ZR4gvglFD65_0CKdGXFuix0JhZeHs" />
-        <meta name="robots" content="noarchive" />
+<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css" />
 
-        <meta name="description" content="Computer Science Graduate" />
+<link href="/static/css/main.css" rel="stylesheet" />
+<link rel="stylesheet" href="/static/css/bootstrap.css">
+<script src="https://kit.fontawesome.com/0fd6883fa0.js" crossorigin="anonymous"></script>
+<style>
+  body {
+  font-family: arial, sans-seri;
+  line-height: 1.5;
+  color: #666666;
+  margin-top: 5rem;
+}
+nav {
+font-family: arial, sans-seri;
+}
+.jumbotron {
+    background: none
+}
+</style>
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css" />
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{% block title %}{% endblock %}</title>
+</head>
 
-        <meta name="theme-color" content="#218380" />
-
-        <meta name="generator" content="my bare hands" />
-        <meta name="subject" content="Srinivas Thomala" />
-        <meta name="referrer" content="no-referrer" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Srinivas Thomala" />
-        <meta property="og:locale" content="en_US" />
-
-        <link href="/static/css/master.min.css" rel="stylesheet" />
-    </head>
-
-    <body>
-        <svg display="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-            <defs>{% block def %}{% endblock %}</defs>
-
-        </svg>
-
-        <div id="page-container">
-            <div id="page-wrapper">
-                <header id="masthead" class="clearfix">
-                    <a id="masthead-name" href="/">Srinivas Thomala</a>
-
-                    <nav id="main-nav">
-                        <ul>
-                            <li>
-                                <a href="/resume" >Resume</a>
-                            </li>
-                            <li>
-                                <a href="/projects" >Projects</a>
-                            </li>
-                            <li class="final">
-                                <a href="/contact" >Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </header>
-
-                <main>
-                  {% block content %}{% endblock %}
-                </main>
-
-            </div>
-
-            <footer id="site-footer">
-                <p>
-                    <svg class="icon"><use xlink:href="#icon-location"></use></svg>
-                    Gainesville, FL, United States
-                </p>
-            </footer>
+<body>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="my_nav">
+      <div class="container">
+      <a class="navbar-brand mr-4" href="/">Srinivas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto">
         </div>
+        <div class="navbar-nav ml-auto">
+        <li class="nav-item active">
+        <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="/resume">Resume</a>
+        </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="/portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="/contact">Contact</a>
+        </li>
+        </div>
+      </div>
+      </div>
+    </nav>
+    </header>
+    <main role="main" class="container justify-content-center align-items-center">
+      {% block content %}{% endblock %}
+    </main>
 
-        <script src="/static/js/jquery.min.js"></script>
-        <script src="/static/js/srinivas.js"></script>
-
-        <a href="/ignis-fatuus" class="hidden"></a>
-
-    </body>
+  <script src="/static/js/jquery.min.js"></script>
+  <script src="/static/js/srinivas.js"></script>
+</body>
 </html>
